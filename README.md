@@ -1,7 +1,5 @@
 # Red-team-linux-cheatsheet
 
-# General
-
 # MSFConsole
 #### Start listener
 ```
