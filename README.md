@@ -203,7 +203,7 @@ python smbexec.py <domain>/Administrator@<computername dc> -k -no-pass
 ## Crackmapexec
 #### Get the password policy
 ```
-Cme smb <ip> -u <username> -p <password> --pas-pol
+cme smb <ip> -u <username> -p <password> --pas-pol
 ```
 
 #### Cat .cme.conf to change workspace and other configurations
