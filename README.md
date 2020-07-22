@@ -250,6 +250,9 @@ procdump_path can automate dumping hashes with procpdump
 ```
 
 #### Use the gpp_autologin to check for auto login credentials
+```
+cme smb -m gpp_autologin –options
+```
 
 #### Tee the output to a log file since you want to be able to look back on the output
 ```
