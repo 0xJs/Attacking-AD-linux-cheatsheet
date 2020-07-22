@@ -22,7 +22,7 @@ sessions
 sessions -k <id>
 ```
 
-#### enter sessions
+#### Enter sessions
 ```
 sessions -i <id>
 ```
