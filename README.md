@@ -206,6 +206,11 @@ python smbexec.py <domain>/Administrator@<computername dc> -k -no-pass
 cme smb <ip> -u <username> -p <password> --pas-pol
 ```
 
+#### List the shares
+```
+cme smb <ip> -u <username> -p <password> --shares
+```
+
 #### Cat .cme.conf to change workspace and other configurations
 ```
 cd .cme && cat cme.conf
