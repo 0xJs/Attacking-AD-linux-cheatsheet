@@ -211,6 +211,22 @@ cme smb <ip> -u <username> -p <password> --pas-pol
 cme smb <ip> -u <username> -p <password> --shares
 ```
 
+#### List the loggedonusers
+```
+cme smb <ip> -u <username> -p <password> --loggedon-users
+```
+
+#### Dump credentials LSA
+```
+cme smb <ip> -u <username> -p <password> --lsa
+```
+
+#### Dump credentials sam
+```
+cme smb <ip> -u <username> -p <password> --sam
+```
+
+
 #### Cat .cme.conf to change workspace and other configurations
 ```
 cd .cme && cat cme.conf
