@@ -88,12 +88,12 @@ cat <path>
 ## Port forwarding
 #### Port forward with netsh (cmd)
 ```
-Ntsh interface portproxy add v4tov4 listenport=443 listenaddress=xx.xx.xx.xx connectaddress=xx.xx.xx.xx connectport=445
+netsh interface portproxy add v4tov4 listenport=443 listenaddress=xx.xx.xx.xx connectaddress=xx.xx.xx.xx connectport=445
 ```
 
 #### List forwarded ports netsh
 ```
-Ntsh interface portproxy add v4tov4 listenport=443 listenaddress=xx.xx.xx.xx connectaddress=xx.xx.xx.xx connectport=445
+netsh interface portproxy add v4tov4 listenport=443 listenaddress=xx.xx.xx.xx connectaddress=xx.xx.xx.xx connectport=445
 ```
 
 ## Dump lsass to a file (for when MimiKatz doesn't work)
